@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{9936AAE0-E895-4E7C-A5E7-234276E63C75}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
+		Directory.Packages.props = Directory.Packages.props
+		global.json = global.json
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E9F4CE39-326B-47B3-B97C-9BF667619B58}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E12D117F-D567-4286-9FF2-6DA0578FF263}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example.Template", "src\Example.Template\Example.Template.csproj", "{E94713FA-80DA-4E31-A56C-2CDD473DA1E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example.Template.Tests", "tests\Example.Template.Tests\Example.Template.Tests.csproj", "{CF554011-16D4-447F-99FF-41FF152C0EC7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E94713FA-80DA-4E31-A56C-2CDD473DA1E8} = {E9F4CE39-326B-47B3-B97C-9BF667619B58}
+		{CF554011-16D4-447F-99FF-41FF152C0EC7} = {E12D117F-D567-4286-9FF2-6DA0578FF263}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E94713FA-80DA-4E31-A56C-2CDD473DA1E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E94713FA-80DA-4E31-A56C-2CDD473DA1E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E94713FA-80DA-4E31-A56C-2CDD473DA1E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E94713FA-80DA-4E31-A56C-2CDD473DA1E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF554011-16D4-447F-99FF-41FF152C0EC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF554011-16D4-447F-99FF-41FF152C0EC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF554011-16D4-447F-99FF-41FF152C0EC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF554011-16D4-447F-99FF-41FF152C0EC7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
