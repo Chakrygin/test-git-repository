@@ -4,11 +4,13 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        var builder = WebApplication.CreateBuilder(args);
-        var app = builder.Build();
+        var host = Host.CreateDefaultBuilder()
+            .ConfigureWebHostDefaults(builder =>
+            {
+                builder.UseStartup<Startup>();
+            })
+            .Build();
 
-        app.MapGet("/", () => "Hello World!");
-
-        app.Run();
+        host.Run();
     }
 }
